@@ -3,17 +3,17 @@
 #include <filesystem>
 
 struct Options {
-    std::optional<int> return_value;
-    std::string i_fmt;
-    std::string o_fmt;
-    bool o_raw;
-    bool i_raw;
-    std::filesystem::path i_path;
-    std::filesystem::path o_path;
+    std::optional<int> return_value{};
+    std::string i_fmt{};
+    std::string o_fmt{};
+    bool o_raw{};
+    bool i_raw{};
+    std::filesystem::path i_path{};
+    std::filesystem::path o_path{};
 };
 
 auto process_options(int argc, char **argv) -> Options try {
-    auto result = Options{.return_value = std::nullopt};
+    auto result = Options{};
     cxxopts::Options options_config("gvox-cli", "gvox-cli is a command line interface for the gvox format library");
     options_config.add_options()                                                                          //
         ("i,input", "Input file", cxxopts::value<std::string>()->default_value("input"))                  //

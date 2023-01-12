@@ -2,7 +2,7 @@
   "registries": [
     {
       "kind": "git",
-      "baseline": "53361912c3f8c19e94a83be986f879124206d770",
+      "baseline": "acceadc598cbfad5f60e9ce1cfee6700fc7959f1",
       "repository": "https://github.com/GabeRundlett/vcpkg-registry",
       "packages": [
         "gvox"
