@@ -15,3 +15,5 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     gvox::gvox
 )
 target_compile_definitions(${PROJECT_NAME} PRIVATE GVOX_CLI_VERSION_STRING="${PROJECT_VERSION}")
+
+include(cmake/packaging.cmake)
